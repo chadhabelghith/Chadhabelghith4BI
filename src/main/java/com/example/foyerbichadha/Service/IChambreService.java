@@ -5,8 +5,10 @@ import com.example.foyerbichadha.entities.chambre;
 import java.util.List;
 
 public interface IChambreService {
-    chambre addChambre(chambre chambre);
-    void deleteChambre(Long idChambre);
-    chambre updateChambre(chambre chambre);
+    chambre addChambre(chambre c);
+    void deleteChambre(Long id);
+    chambre updateChambre(chambre c);
     List<chambre> getAllChambres();
+    chambre retrieveChambre(Long id);
 }
+
